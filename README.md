@@ -150,7 +150,8 @@ Since the Logstash server now has hardcoded secrets for accessing both AWS and A
 
 Below is a simple example query to get you started on building your own analytics rules, hunting queries and dashboards for GuardDuty data:
 
-```AWSGuardDuty_CL 
+```
+AWSGuardDuty_CL 
 | where Severity > 2
 | project TimeGenerated, Severity, type_s, title_s, resource_resourceType_s, service_resourceRole_s
 | limit 20
