@@ -41,7 +41,7 @@ Here is a visualization of the solution:
 
 https://github.com/mikoiv/AzureSentinel-AWSGuardDuty/blob/master/architecture_overview_v2.png
 
-Note: there are alternative ways to do this integration, namely with Amazon CloudWatch. The S3 export + Logstash method is easy to implement, but as a downside the S3 export is a scheduled process which will add a configurable time delay to the process (15min at minimum). Heavy AWS users with streamlined SecOps processes will want to evaluate the options carefully.
+There are alternative ways to do this integration, namely with Amazon CloudWatch. The S3 export + Logstash method is easy to implement, but at least one downside is a configurable time delay to the process (15min at minimum) for finding updates. Heavy AWS users with streamlined SecOps processes will want to evaluate the options carefully.
 
 <a name="guarddutyconfig"/>
 
