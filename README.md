@@ -130,7 +130,7 @@ Now you can test running Logstash either manually or as a service and follow wha
 
 Now you have a working Logstash pipeline that automatically maps the JSON finding files from S3 to an Azure Log Analytics custom table called AWSGuardDuty_CL. 
 
-After you recieve the first events with this configuration, you can investigate how the data looks in Sentinel and decide if the data format is OK or if you want to build a customized filter as part of the Logstash configuration to remove or mutate some fields or enrich the data somehow.
+After you recieve the first events with this configuration, you can investigate how the data looks in Sentinel and decide if the data format is OK for you - or if you maybe want to build a customized filter as part of the Logstash configuration, to remove or mutate some fields or enrich the data somehow.
 
 Logstash can be resource intensive, so be sure to read through the document [Performance Troubleshooting](https://www.elastic.co/guide/en/logstash/current/performance-troubleshooting.html).
 
