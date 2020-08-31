@@ -7,7 +7,6 @@
 1. [Configuring Amazon GuardDuty](#guarddutyconfig)
 1. [Configuring Logstash](#logstashconfig)
 1. [Querying the data in Azure Sentinel](#sentinelqueries)
-1. [Building a use case for GuardDuty](#usecase)
 
 <a name="introduction"/>
 
@@ -147,7 +146,7 @@ Since the Logstash server now has hardcoded secrets for accessing both AWS and A
 
 # 5. Querying the data in Azure Sentinel
 
-Below is a simple example to get you started on building your own searches, analytics rules and hunting queries for GuardDuty data:
+Below is a simple example to get you started on building your own analytics rules, hunting queries and dashboards for GuardDuty data:
 
 ```AWSGuardDuty_CL 
 | where Severity > 2
@@ -155,7 +154,7 @@ Below is a simple example to get you started on building your own searches, anal
 | limit 20
 ```
 
-The query looks for 20 newest findings that are medium or high severity out and displays the following data:
+The query looks for 20 newest findings that are medium or high severity out and displays some interesting information:
 
 * Time the finding was generated
 * Severity of the finding (2=low, 5=medium, 8=high)
@@ -169,7 +168,5 @@ Example results:
 
 https://github.com/mikoiv/AzureSentinel-AWSGuardDuty/blob/master/sentinel_query_example_1.png
 
-<a name="usecase"/>
 
-# 6. Building a security operations use case for GuardDuty
 
