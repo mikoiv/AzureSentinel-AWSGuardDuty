@@ -164,6 +164,7 @@ The query looks for 20 newest findings that are medium or high severity out and 
 * Threat flow direction (Target=inbound, Actor=outbound)
 
 Example results:
+
 ![Sentinel screenshot](https://github.com/mikoiv/AzureSentinel-AWSGuardDuty/blob/master/sentinel_query_example_1.png)
 
 https://github.com/mikoiv/AzureSentinel-AWSGuardDuty/blob/master/sentinel_query_example_1.png
