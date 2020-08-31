@@ -36,9 +36,9 @@ The chosen method here is utilizing the AWS native **Export GuardDuty Findings t
 
 Here is the full pipeline for a single threat/finding seen in an AWS account:
 
-![Architecture diagram](https://github.com/mikoiv/AzureSentinel-AmazonGuardDuty/blob/master/architecture_overview_v2.png)
+![Architecture diagram](https://github.com/mikoiv/AzureSentinel-AWSGuardDuty/blob/master/architecture_overview_v2.png)
 
-https://github.com/mikoiv/AzureSentinel-AmazonGuardDuty/blob/master/architecture_overview_v2.png
+https://github.com/mikoiv/AzureSentinel-AWSGuardDuty/blob/master/architecture_overview_v2.png
 
 Note: there are alternative ways to do this integration, namely with Amazon CloudWatch. The S3 export + Logstash method is easy to implement, but as a downside the S3 export is a scheduled process which will add a configurable time delay to the process (15min at minimum). Heavy AWS users with streamlined SecOps processes will want to evaluate the options carefully.
 
@@ -157,9 +157,9 @@ The query looks for 20 newest findings, filters low Severity findings out (2=low
 * Resource type
 * Threat flow direction (Target=inbound, Actor=outbound)
 
-![Sentinel screenshot](https://github.com/mikoiv/AzureSentinel-AmazonGuardDuty/blob/master/sentinel_query_example_1.png)
+![Sentinel screenshot](https://github.com/mikoiv/AzureSentinel-AWSGuardDuty/blob/master/sentinel_query_example_1.png)
 
-https://github.com/mikoiv/AzureSentinel-AmazonGuardDuty/blob/master/sentinel_query_example_1.png
+https://github.com/mikoiv/AzureSentinel-AWSGuardDuty/blob/master/sentinel_query_example_1.png
 
 <a name="usecase"/>
 
