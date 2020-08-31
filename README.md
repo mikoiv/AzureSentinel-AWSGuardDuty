@@ -35,7 +35,7 @@ The chosen method here is utilizing the AWS native **Export GuardDuty Findings t
 
 Reading JSON data from S3 to Azure Sentinel is easy to do with **Logstash**, without being forced to build any custom translation patterns to map the data. Logstash also gives you the power to do filtering, mutation and enrichment if you want to.
 
-Here is the full pipeline for a single threat/finding seen in an AWS account:
+Here is a visualization of the solution:
 
 ![Architecture diagram](https://github.com/mikoiv/AzureSentinel-AWSGuardDuty/blob/master/architecture_overview_v2.png)
 
