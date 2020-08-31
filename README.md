@@ -147,9 +147,15 @@ Since the Logstash server now has hardcoded secrets for accessing both AWS and A
 
 # 5. Querying the data in Azure Sentinel
 
-Below is a simple example to get you started on building your own searches, analytics rules and hunting queries for GuardDuty data. 
+Below is a simple example to get you started on building your own searches, analytics rules and hunting queries for GuardDuty data:
 
-The query looks for 20 newest findings, filters low Severity findings out (2=low, 5=medium, 8=high) and displays the following data:
+```AWSGuardDuty_CL 
+| where Severity > 2
+| project TimeGenerated, Severity, type_s, title_s, resource_resourceType_s, service_resourceRole_s
+| limit 20
+```
+
+The query looks for 20 newest findings that are medium or high severity out and displays the following data:
 
 * Time the finding was generated
 * Severity of the finding (2=low, 5=medium, 8=high)
