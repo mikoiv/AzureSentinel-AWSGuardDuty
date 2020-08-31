@@ -157,7 +157,7 @@ AWSGuardDuty_CL
 | limit 20
 ```
 
-The query looks for 20 newest findings that are medium or high severity out and displays some interesting information:
+The query looks for 20 newest findings that are medium or high severity and displays some interesting information:
 
 * Time the finding was generated
 * Severity of the finding (2=low, 5=medium, 8=high)
