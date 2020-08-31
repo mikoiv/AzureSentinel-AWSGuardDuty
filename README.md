@@ -31,7 +31,9 @@ Sentinel does not have a native connector for GuardDuty, nor does it contain any
 
 # 2. Architecture
 
-The chosen method here is utilizing the AWS native **Export GuardDuty Findings to S3** functionality, which enables GuardDuty to save findings in JSON format to an S3 bucket. Reading JSON data from S3 to Azure Sentinel is easy to do with **Logstash**, without being forced to build any custom translation patterns to map the data. Logstash also gives you the power to do filtering, mutation and enrichment if you want to.
+The chosen method here is utilizing the AWS native **Export GuardDuty Findings to S3** functionality, which enables GuardDuty to save findings in JSON format to an S3 bucket. 
+
+Reading JSON data from S3 to Azure Sentinel is easy to do with **Logstash**, without being forced to build any custom translation patterns to map the data. Logstash also gives you the power to do filtering, mutation and enrichment if you want to.
 
 Here is the full pipeline for a single threat/finding seen in an AWS account:
 
