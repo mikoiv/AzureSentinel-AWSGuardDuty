@@ -126,9 +126,9 @@ output {
 
 Store the configuration in the Logstash configuration directory, for example as `/etc/logstash/conf.d/guardduty.conf`. 
 
-Now you can test running Logstash either manually or as a service and follow what is happening from standard output or the Logstash log file `logstash-plain.log`. A working configuration will log messages such as *"Successfully posted 5 logs into custom log analytics table[AWSGuardDuty]"*.
+Now you can test running Logstash either manually or as a service and follow what is happening from standard output or the Logstash log file `logstash-plain.log`. A working configuration will log messages such as *"Successfully posted 5 logs into custom log analytics table [AWSGuardDuty]"*.
 
-Now you have a pipeline that automatically maps the JSON finding files from S3 to an Azure Log Analytics custom table called AWSGuardDuty_CL. 
+Now you have a working Logstash pipeline that automatically maps the JSON finding files from S3 to an Azure Log Analytics custom table called AWSGuardDuty_CL. 
 
 After you recieve the first events with this configuration, you can investigate how the data looks in Sentinel and decide if the data format is OK or if you want to build a customized filter as part of the Logstash configuration to remove or mutate some fields or enrich the data somehow.
 
