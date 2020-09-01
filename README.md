@@ -91,7 +91,7 @@ This step is not required for enabling the integration, but it is something you 
 
 If you do not have a Logstash server running, you need to first create one and do the installation as documented at [Installing Logstash](https://www.elastic.co/guide/en/logstash/current/installing-logstash.html). 
 
-Since both the AWS and Azure endpoints in this solution are on the public internet, it does not really matter where Logstash is located. The natural choises are an AWS EC2 instance or Azure Virtual Machine in your environment.
+Since both the AWS and Azure endpoints in this solution are on the public internet, it does not really matter where Logstash is located. The natural choises are either an AWS EC2 instance or an Azure Virtual Machine that you control.
 
 Logstash has the needed S3 input plugin installed by default, but the Log Analytics output plugin that sends the data to Sentinel needs to be installed manually. 
 
