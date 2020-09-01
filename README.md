@@ -169,5 +169,5 @@ Example results:
 
 I am also preparing a demo workbook (dashboard) for visualizing GuardDuty data. Here is a preview example of some very basic items that can be shown:
 
-[![Sentinel screenshot](https://github.com/mikoiv/AzureSentinel-AWSGuardDuty/blob/master/sentinel_example_workbook.png)](https://github.com/mikoiv/AzureSentinel-AWSGuardDuty/blob/master/sentinel_example_workbook.png)
+[![Sentinel screenshot](https://github.com/mikoiv/AzureSentinel-AWSGuardDuty/blob/master/sentinel_demo_workbook.png)](https://github.com/mikoiv/AzureSentinel-AWSGuardDuty/blob/master/sentinel_demo_workbook.png)
 
