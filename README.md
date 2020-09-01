@@ -37,13 +37,7 @@ Reading JSON data from S3 to Azure Sentinel is easy to do with **Logstash**, wit
 
 Here is a visualization of the solution:
 
-![Architecture diagram](https://github.com/mikoiv/AzureSentinel-AWSGuardDuty/blob/master/architecture_overview_v2.png)
-
-https://github.com/mikoiv/AzureSentinel-AWSGuardDuty/blob/master/architecture_overview_v2.png
-
 [![Architecture diagram](https://github.com/mikoiv/AzureSentinel-AWSGuardDuty/blob/master/architecture_overview_v2.png)](https://github.com/mikoiv/AzureSentinel-AWSGuardDuty/blob/master/architecture_overview_v2.png)
-
-
 
 There are alternative ways to do this integration, namely with Amazon CloudWatch. The S3 export + Logstash method is easy to implement, but at least one downside is the export time delay to process updated findings (15min at minimum). Heavy AWS users with streamlined SecOps processes will want to evaluate the options carefully.
 
@@ -171,9 +165,6 @@ The query looks for 20 newest findings that are medium or high severity and disp
 
 Example results:
 
-![Sentinel screenshot](https://github.com/mikoiv/AzureSentinel-AWSGuardDuty/blob/master/sentinel_query_example_results.png)
-
-https://github.com/mikoiv/AzureSentinel-AWSGuardDuty/blob/master/sentinel_query_example_results.png
-
+[![Sentinel screenshot](https://github.com/mikoiv/AzureSentinel-AWSGuardDuty/blob/master/sentinel_query_example_results.png)](https://github.com/mikoiv/AzureSentinel-AWSGuardDuty/blob/master/sentinel_query_example_results.png)
 
 
