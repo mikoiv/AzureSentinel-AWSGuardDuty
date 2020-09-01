@@ -25,7 +25,7 @@ GuardDuty analyses event logs, network traffic and DNS events and generates find
 
 Sentinel does not have a native connector for GuardDuty, nor does it contain any rules or hunting queries for analyzing GuardDuty data. This document describes one way to integrate AWS GuardDuty to Azure Sentinel, gives tips on how to understand the data and how to investigate the findings.
 
-*Disclaimer: development for this solution was done on my personal free tier AWS accounts and Azure subscriptions, with no ties to any existing organisation or employer. I chose to spend some of my free time for this, as I imagine the Sentinel community might have interest in a working solution for integrating GuardDuty.*
+^ Disclaimer: development for this solution was done on my personal free tier AWS accounts and Azure subscriptions, with no ties to any existing organisation or employer. I chose to spend some of my free time for this, as I imagine the Sentinel community might have interest in a working solution for integrating GuardDuty.ß
 
 <a name="architecture"/>
 
