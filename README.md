@@ -99,7 +99,7 @@ The output plugin is named "microsoft-logstash-output-azure-loganalytics" and it
 
 ## Configuration
 
-The minimal Logstash configuration is very simple, you just tell the two plugins the access information for both AWS and Azure with the following config:
+The minimal Logstash configuration is very simple, you just tell the two plugins the bucket name, workspace name and access keys for both AWS and Azure:
 
 ```
 input {
@@ -124,11 +124,11 @@ output {
 
 Store the configuration in the Logstash configuration directory, for example as `/etc/logstash/conf.d/guardduty.conf`. 
 
-Now you can test running Logstash either manually or as a service and follow what is happening from standard output or the Logstash log file `logstash-plain.log`. A working configuration will log messages such as *"Successfully posted 5 logs into custom log analytics table [AWSGuardDuty]"*.
+Now you can test running Logstash either manually or as a service and follow what is happening from standard output or the Logstash log files. A working configuration will log messages such as *"Successfully posted 5 logs into custom log analytics table [AWSGuardDuty]"*.
 
-Now you have a working Logstash pipeline that automatically maps the JSON finding files from S3 to an Azure Log Analytics custom table called AWSGuardDuty_CL. 
+After you have sent the first events with this configuration, you can investigate how the data looks in Sentinel via querying the table AWSGuardDuty_CL and decide if the data format is OK for you. You might want to build a customized filter as part of the Logstash configuration, to remove or mutate some fields or enrich the data somehow.
 
-After you recieve the first events with this configuration, you can investigate how the data looks in Sentinel and decide if the data format is OK for you - or if you maybe want to build a customized filter as part of the Logstash configuration, to remove or mutate some fields or enrich the data somehow.
+Now you have a working Logstash pipeline that automatically maps the JSON finding files from S3 to Sentinel.
 
 Logstash can be resource intensive, so be sure to read through the document [Performance Troubleshooting](https://www.elastic.co/guide/en/logstash/current/performance-troubleshooting.html).
 
