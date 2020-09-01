@@ -165,7 +165,7 @@ The query looks for 20 newest findings that are medium or high severity and disp
 
 Example results:
 
-[![Sentinel screenshot](https://github.com/mikoiv/AzureSentinel-AWSGuardDuty/blob/master/sentinel_query_example_result.png)](https://github.com/mikoiv/AzureSentinel-AWSGuardDuty/blob/master/sentinel_query_example_result.png)
+[![Sentinel screenshot](https://github.com/mikoiv/AzureSentinel-AWSGuardDuty/blob/master/sentinel_query_example.png)](https://github.com/mikoiv/AzureSentinel-AWSGuardDuty/blob/master/sentinel_query_example.png)
 
 I am also preparing a demo workbook (dashboard) for visualizing GuardDuty data. Here is a preview example of some very basic items that can be shown:
 
