@@ -138,7 +138,7 @@ Logstash can be resource intensive, so be sure to read through the document [Per
 
 Since the Logstash server now has hardcoded secrets for accessing both AWS and Azure, it is important to decide what is a good security baseline for the server. 
 
-* Make sure only the relevant people have access to the server and remember to do access reviews and make sure the Logstash configuration files have correct ACLs. 
+* Make sure only the relevant people have access to the server, remember to do access reviews, make sure the Logstash configuration files have correct ACLs. 
 
 * Evaluate changing the configuration to utilize Logstash [Secrets keystore](https://www.elastic.co/guide/en/logstash/current/keystore.html) for storing the AWS and Azure secrets.
 
